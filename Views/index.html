@@ -1,53 +1,112 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
+    <title>Personal Web</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/Tailwind/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+
 </head>
 <body class="bg-slate-900 ">
-    <nav class="flex p-7  overflow-hidden justify-between items-center shadow-lg sticky top-0 bg-slate-900 ">
-        <div class=" float-left bg-slate-800 rounded mx-4 border-x-4 border-slate-800 shadow-lg  font-bold text-2xl text-sky-50">Ferdian.</div>
+    <!-- Navbar start -->
+     <nav class="flex p-7 border-b-2 border-pink-500  overflow-hidden justify-between items-center shadow-lg sticky top-0 bg-slate-900 ">
+            <h1 class=" float-left  rounded mx-4  shadow-lg  font-bold text-2xl text-violet-700">Ferdian.</h1>
     <!-- Logo -->
         <!-- <div class="p-2  ">
             <img class=" float-left h-10 w-10 " src="./img/Logo3.png" alt="">
         </div> -->
     <div class="flex float-left items-center justify-between">
-        <div class="  bg-slate-800 mx-4 border-x-4 border-slate-800 shadow-lg rounded text-sky-50">
-            <a href="#Home">#Home</a>
+        <div class=" mx-4 font-bold shadow-lg text-sky-50 hover:border-b-2 border-violet-700">
+            <a class="text-violet-700" href="#Home">Home</a>
         </div>
-        <div class="  bg-slate-800 mx-4 border-x-4 border-slate-800 shadow-lg rounded text-sky-50">
-            <a href="#About">About</a>
+        <div class=" mx-4  shadow-lg font-bold  text-sky-50 hover:border-b-2 border-violet-700">
+            <a class="text-violet-700" href="#About">About</a>
         </div>
-        <div class="  bg-slate-800 mx-4 border-x-4 border-slate-800 shadow-lg rounded text-sky-50">
-            <a href="">Project</a>
+        <div class=" mx-4  shadow-lg font-bold text-sky-50 hover:border-b-2 border-violet-700">
+            <a class="text-violet-700" href="#Project">Project</a>
         </div>
-        <div class="  bg-slate-800 mx-4 border-x-4 border-slate-800 shadow-lg rounded text-sky-50">
-            <a href="">Contact</a>
+        <div class="mx-4 shadow-lg font-bold  text-sky-50 hover:border-b-2 border-violet-700">
+            <a class="text-violet-700" href="">Contact</a>
         </div>
     </div>
     </nav>
-    <section class="mb-12 p-44  bg-gradient-to-tr from-slate-900 to-violet-900  " id="Home" >
-        <div class=" p-44 container mx-auto  text-white ">
-            <header class="text-4xl font-bold mb-4 ">
-                "HTML With 
-                <span class="pb-1 border-b-2 bold border-white"> TailwindCSS</span>"
+    <!-- Navbar end -->
+
+<section id="Home">
+    <!-- Home start -->
+
+    <!-- Gradient -->
+    <!-- bg-gradient-to-tr from-slate-900 to-violet-900  -->
+    <div class="mb-12 p-36" id="Home" >
+        <div class=" p-36 container mx-auto  text-white ">
+            <header class="text-4xl font-bold mb-4 text-violet-700 ">
+                HTML With 
+                <span class="pb-1 border-b-2 text-pink-700 border-pink-700"> TailwindCSS</span> 
             </header>
-            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, commodi?</p>
+            <p class=""> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita laboriosam <br> necessitatibus officiis dicta debitis, possimus nesciunt quidem. At <br> culpa numquam quo  autem placeat similique suscipit obcaecati aliquid impedit aut? Qui! </p>
         </div>
-    </section>
+    </div>
+</section>
+    <!-- Home end -->
+
+    <!-- About start -->
     <section class="m-12" id="About" >
-        <!-- Underline -->
-        <!-- <div class=" underline  text-white text-4xl font-bold">
-            YOLO
-        </div> -->
-        <div class=" p-44  text-white">
-            <span class="text-4xl font-bold"> #About </span>
-            <p class="  text-white"> Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Reprehenderit sed dolores error accusamus hic <br> praesentium quae repellendus porro doloribus, ipsum officiis enim velit exercitationem <br> suscipit vel, similique est rerum beatae.<span class="pb-1 border-b-2 bold border-white">Computer </span>  </p>
-            <div class=" py-12 w-36 border text-black border-black bg-white rounded  ">
-                Tes
+        <div class="  p-44  text-white ">
+            <span class="text-4xl text-violet-700 font-bold"> #About </span>
+            <p class=" mb-10 text-white"> Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Reprehenderit sed dolores error accusamus hic <br> praesentium quae repellendus porro doloribus, ipsum officiis enim velit exercitationem <br> suscipit vel, similique est rerum beatae.<span class="pb-1 border-b-2 bold border-white">Computer </span>  </p>
+           <div class="flex justify-start items-center gap-4">
+                <h1 class="mb-10 font-bold text-3xl text-pink-700  ">Programming Language:</h1>
+                <div class="h-px bg-white"></div>
+           </div>
+            <!-- Bar start -->
+            <div class="flex gap-4 ">
+                <button class=" py-12 mx-2 w-36 border text-white border-black bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg  ">
+                    <img class=" mx-auto w-14 h-14"  src="./img/html.svg" alt="">
+                    <p class=" p-12 font-medium">HTML</p>
+                </button>
+                <button class=" py-12 mx-2 w-36 border text-white border-black bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg   ">
+                    <img class=" mx-auto w-14 h-14"  src="./img/CSS3.png" alt="">
+                    <p class=" p-12 font-medium">CSS</p>
+                </button>
+                <button class=" py-12 mx-2 w-36 border text-white border-black bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg  ">
+                    <img class=" mx-auto w-14 h-14"  src="./img/php.png" alt="">
+                    <p class=" p-12 font-medium">PHP</p>
+                </button>
             </div>
+            <!-- Bar end -->
         </div>
     </section>
+    <!-- About end   -->
+    <!-- Project Start -->
+    <section id="Project">
+        <div class="p-44 text-white ">
+            <h1 class="text-4xl font-bold text-violet-700">#Project</h1>
+            <p class="mb-10"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque culpa eligendi <br> laudantium consequuntur aspernatur quae ullam voluptatibus <br> aliquid a, iure nisi optio laborum necessitatibus.</p>
+            <div class="">
+                <h1 class="text-4xl font-bold text-pink-700 mb-10">Ongoing:</h1>
+            </div>
+            <!-- <button class="py-12 mx-2 w-36 border text-white border-black bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg">
+                <h1 class=" text-2xl">Personal Web</h1>
+            </button> -->
+            <!-- Maintenance -->
+            <button class="py-12  mx-2 w-96 h-96  border  text-white border-black bg-violet-800 hover:bg-violet-700 bg-cover shadow-2xl rounded-lg" >
+                <div class="items-end container bg-violet-800 hover:bg-violet-700">
+                    <img class="bg-cover top-0 w-72 rounded mx-auto" src="./img/PW.png" alt="Personal Web">
+                    <div class="flex justify-between">
+                        <h1 class=" mx-6 border-b-2 border-b-white text-2xl font-bold">Personal Web</h1>
+                        <div class="flex">
+                            <a class="p-1 hover:border-b-2 border-b-white" href="https://github.com/12Ferdian12/Personal_Web"><i data-feather="github"></i></a>
+                            <a class="p-1 hover:border-b-2 border-b-white" href=""><i data-feather="arrow-down-left"></i></a>
+                        </div>
+                    </div>
+                    <p class=" p-7 text-sm text-start  ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae ad, facilis nulla accusamus magni quam.</p>
+                </div>
+            </button>
+        </div>
+    </section>
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
