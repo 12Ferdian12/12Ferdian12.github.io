@@ -11,7 +11,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
 
 </head>
-<body class="bg-slate-900 scrollbar-thin scrollbar-thumb-pink-500 ">
+<body class="bg-slate-900 scrollbar-thin scrollbar-thumb-pink-500 overflow-x-hidden">
     <!-- Navbar start -->
      <nav id="Nav" class="flex z-50 p-7 border-b-2 h-28 border-pink-500 bg-transparent backdrop-filter backdrop-blur justify-between items-center shadow-lg sticky top-0 bg-slate-900 ">
         <div class="flex ">
@@ -32,16 +32,25 @@
             </li>
         </ul>
         <button class="block md:hidden py-3 mx-2 rounded focus:outline-none  group">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ec4899;"></i>
+            <!-- <div class="w-5 h-1 border border-pink-500 mb-1"></div>
             <div class="w-5 h-1 border border-pink-500 mb-1"></div>
-            <div class="w-5 h-1 border border-pink-500 mb-1"></div>
-            <div class="w-5 h-1 border border-pink-500 "></div>
+            <div class="w-5 h-1 border border-pink-500 "></div> -->
             <div class="absolute top-0 -right-full h-screen w-8/12 bg-slate-900 border opacity-0
             group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
                 <ul class="flex flex-col items-center text-violet-700 font-bold w-full text-base cursor-pointer pt-10">
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">Home</li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">About</li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">Project</li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">Contact</li>
+                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
+                        <a href="#About">About</a>
+                    </li>
+                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
+                        <a href="#Project">Project</a>
+                    </li>
+                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
+                        <a href="#Contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </button>
