@@ -1,276 +1,476 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-<head>
+  <head>
     <title>Personal Web</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/Tailwind/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/feather-icons"></script>
-
-</head>
-<body class="bg-slate-900 scrollbar-thin scrollbar-thumb-pink-500 overflow-x-hidden">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/Tailwind/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body
+    class="bg-slate-900 scrollbar-thin scrollbar-thumb-pink-500 overflow-x-hidden"
+  >
     <!-- Navbar start -->
-     <nav id="Nav" class="flex z-50 p-7 border-b-2 h-28 border-pink-500 bg-transparent backdrop-filter backdrop-blur justify-between items-center shadow-lg sticky top-0 bg-slate-900 ">
-        <div class="flex ">
-            <h1 class=" float-left mx-4  font-bold  text-violet-700 font-Japan hover:border-b-2 border-violet-700 text-2xl  md:text-2xl hover:cursor-default" >フェルディナンド.</h1>
-        </div>    
-        <ul class="hidden  md:flex float-left items-center justify-between -z-10"  >
-            <li class=" mx-4 font-bold  text-sky-50 hover:border-b-2 border-violet-700" >
-                <button class="text-violet-700" onclick="topFunction()" id="myBtn" >Home</button>
+    <nav
+      id="Nav"
+      class="flex z-50 p-7 border-b-2 h-28 border-pink-500 bg-transparent backdrop-filter backdrop-blur justify-between items-center shadow-lg sticky top-0 bg-slate-900"
+    >
+      <div class="flex">
+        <h1
+          class="float-left mx-4 font-bold text-violet-500 font-Japan hover:border-b-2 border-violet-500 text-2xl md:text-2xl hover:cursor-default"
+        >
+          フェルディナンド.
+        </h1>
+      </div>
+      <ul class="hidden md:flex float-left items-center justify-between -z-10">
+        <li
+          class="mx-4 font-bold text-sky-50 hover:border-b-2 border-violet-500"
+        >
+          <button class="text-violet-500" onclick="topFunction()" id="myBtn">
+            Home
+          </button>
+        </li>
+        <li
+          class="mx-4 font-bold text-sky-50 hover:border-b-2 border-violet-500"
+        >
+          <a class="text-violet-500" href="#About">About</a>
+        </li>
+        <li
+          class="mx-4 font-bold text-sky-50 hover:border-b-2 border-violet-500"
+        >
+          <a class="text-violet-500" href="#Project">Project</a>
+        </li>
+        <li
+          class="mx-4 font-bold text-sky-50 hover:border-b-2 border-violet-500"
+        >
+          <a class="text-violet-500" href="#Contact">Contact</a>
+        </li>
+      </ul>
+      <!-- <button
+        class="block md:hidden py-3 mx-2 rounded focus:outline-none group"
+      >
+        <i class="fa-solid fa-bars fa-2xl" style="color: #ec4899"></i>
+        <div
+          class="absolute top-0 -right-full h-screen w-8/12 bg-slate-900 border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+        >
+          <ul
+            class="flex flex-col items-center text-violet-500 font-bold w-full text-base cursor-pointer pt-10"
+          >
+            <li class="hover:bg-slate-800 py-4 px-6 w-full">
+              <a href="#Home">Home</a>
             </li>
-            <li class=" mx-4   font-bold  text-sky-50 hover:border-b-2 border-violet-700">
-                <a class="text-violet-700" href="#About">About</a>
+            <li class="hover:bg-slate-800 py-4 px-6 w-full">
+              <a href="#About">About</a>
             </li>
-            <li class=" mx-4   font-bold text-sky-50 hover:border-b-2 border-violet-700">
-                <a class="text-violet-700" href="#Project">Project</a>
+            <li class="hover:bg-slate-800 py-4 px-6 w-full">
+              <a href="#Project">Project</a>
             </li>
-            <li class="mx-4  font-bold  text-sky-50 hover:border-b-2 border-violet-700">
-                <a class="text-violet-700" href="#Contact">Contact</a>
+            <li class="hover:bg-slate-800 py-4 px-6 w-full">
+              <a href="#Contact">Contact</a>
             </li>
-        </ul>
-        <button class="block md:hidden py-3 mx-2 rounded focus:outline-none  group">
-            <i class="fa-solid fa-bars fa-2xl" style="color: #ec4899;"></i>
-            <!-- <div class="w-5 h-1 border border-pink-500 mb-1"></div>
-            <div class="w-5 h-1 border border-pink-500 mb-1"></div>
-            <div class="w-5 h-1 border border-pink-500 "></div> -->
-            <div class="absolute top-0 -right-full h-screen w-8/12 bg-slate-900 border opacity-0
-            group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-                <ul class="flex flex-col items-center text-violet-700 font-bold w-full text-base cursor-pointer pt-10">
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
-                        <a href="#Home">Home</a>
-                    </li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
-                        <a href="#About">About</a>
-                    </li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
-                        <a href="#Project">Project</a>
-                    </li>
-                    <li class="hover:bg-slate-800 py-4 px-6 w-full">
-                        <a href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </button>
-        
+          </ul>
+        </div>
+      </button> -->
     </nav>
     <!-- Navbar end -->
 
-    <section id="Home" class="mb-40 md:m-0" >
-        <div class="absolute md:p-18 lg:p-36 w-[200px] h-[200px] lg:w-full lg:h-full blur-2xl -z-10" style="background-image: url(./img/BGH.png);" ></div>
-        <div class="mb-12 sm:py-36 sm:px-10 md:p-16 lg:p-36 z-10" >
-            <div class="px-5 sm:p-1 md:px-5 md:p-8 lg:p-16 pt-36 container mx-auto  text-white ">
-                <header id="head" class="text-left font-bold mb-4 text-violet-700 text-4xl sm:text-5xl md:text-4xl ">
-                    Hello i am <span class="  md:pb-1 border-b-4 text-pink-700 border-pink-700">Ferdian.</span> 
-                </header>
-                <p class="container w-[350px] md:w-[600px] lg:w-[700px] sm:text-xl md:text-lg"> A 15 year old boy that is interested about Tech and mostly want to become a Software Engineer The Journey started at 2022. He studied many Programming Langguage Like C++, Python, PHP, etc.  And right now He is studying about A Framework that is Called TailwindCSS</p>
-            </div>
+    <section id="Home" class="mb-40 md:m-0">
+      <div
+        class="absolute md:p-18 lg:p-36 w-[200px] h-[200px] lg:w-full lg:h-full blur-2xl -z-10"
+        style="background-image: url(./img/BGH.png)"
+      ></div>
+      <div class="mb-12 sm:py-36 sm:px-10 md:p-16 lg:p-36 z-10">
+        <div
+          class="px-5 sm:p-1 md:px-5 md:p-8 lg:p-16 pt-36 container mx-auto text-white"
+        >
+          <header
+            id="head"
+            class="text-left font-bold mb-4 text-violet-500 text-4xl sm:text-5xl md:text-4xl"
+          >
+            Hello i am
+            <span class="md:pb-1 border-b-4 text-pink-700 border-pink-700"
+              >Ferdian.</span
+            >
+          </header>
+          <p
+            class="container w-[350px] md:w-[600px] lg:w-[700px] sm:text-xl md:text-lg"
+          >
+            A 15 year old boy that is interested about Tech and mostly want to
+            become a Software Engineer The Journey started at 2022. He studied
+            many Programming Langguage Like C++, Python, PHP, etc. And right now
+            He is studying about A Framework that is Called TailwindCSS
+          </p>
         </div>
+      </div>
     </section>
     <!-- Home end -->
 
     <!-- About start -->
-    <section  id="About" class="mb-40 md:m-0">
-        <div class="container sm:p-1 md:p-16 lg:p-44  text-white ">
-            <div class="px-5 ">
-                <span class="text-violet-700  font-bold text-4xl sm:text-5xl md:text-4xl"> #About </span>
-                <p class="container  w-[350px] md:w-[700px]  mb-10 text-white sm:text-xl md:text-lg">  Hi my name is Ferdian i am a junior highschool that love Programming and i usually like to play video games it started when my mom called a teacher who want to teach me because i don't have  a job to do at home .  At first, i really don't want to study Programming because it look too hard for me  After serveral project that we made i was really into it and now here i am</p>
-            </div>
-           <div class="flex justify-start items-center gap-4">
-                <h1 class="px-5 mb-10 font-bold text-3xl text-pink-700  ">Tech Stack:</h1>
-           </div>
-            <!-- Bar start -->
-            <!-- Programming Language -->
-            <div class=" px-5 grid  gap-4 mb-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/html.svg" alt="">
-                    <div class="py-2  ">
-                        <p class=" font-medium">HTML</p>
-                        <p class="text-sm hover:border-b border-white">Intermediate</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/CSS3.png" alt="CSS">
-                    <div class="py-2 ">
-                        <p class=" font-medium">CSS</p>
-                        <p class="text-sm hover:border-b border-white">Intermediate</p>
-                    </div>
-                </div>
-                 <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/php.png" alt="PHP">
-                    <div class="py-2 ">
-                        <p class=" font-medium">PHP</p>
-                        <p class="text-sm hover:border-b border-white">Intermediate</p>
-                    </div>
-                </div>
-                 <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/JS.png" alt="JavaScript">
-                    <div class="py-2 ">
-                        <p class=" font-medium">JavaScript</p>
-                        <p class="text-sm hover:border-b border-white">Intermediate</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/Tailwind.svg" alt="TailwindCSS">
-                    <div class="py-2 ">
-                        <p class=" font-medium">TailwindCSS</p>
-                        <p class="text-sm hover:border-b border-white">Beginner</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/Python.png" alt="Python">
-                    <div class="py-2">
-                        <p class=" font-medium">Python</p>
-                        <p class="text-sm hover:border-b border-white">Beginner</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/Laravel.png" alt="Laravel">
-                    <div class="py-2">
-                        <p class=" font-medium">Laravel</p>
-                        <p class="text-sm hover:border-b border-white">Beginner</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tools -->
-            <h1 class="px-5 mb-10 font-bold text-3xl text-pink-700">Tools:</h1>    
-            <div class="px-5 grid  gap-4 mb-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/Git.png" alt="Git">
-                    <div class="py-2 ">
-                        <p class=" font-medium">Git</p>
-                        <p class="text-sm hover:border-b border-white">Version Control</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <div class="p-2 mx-2 my-3 w-10 h-10 ">   <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>  </div>
-                    <!-- <img class="mx-2 my-3 w-10 h-10 bg-white rounded-lg"  src="./img/github.svg" alt="Github"> -->
-                    <div class="py-2 ">
-                        <p class=" font-medium">Github</p>
-                        <p class="text-sm hover:border-b border-white">Web Hosting</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-10 h-10"  src="./img/VS.png" alt="Visual Studio Code">
-                    <div class="py-2 ">
-                        <p class=" font-medium">VsCode</p>
-                        <p class="text-sm hover:border-b border-white">Code Editor</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 my-3 w-14 h-10"  src="./img/MySQL.png" alt="Laravel">
-                    <div class=" py-2">
-                        <p class=" font-medium">MySQL</p>
-                        <p class="text-sm hover:border-b border-white">Database</p>
-                    </div>
-                </div>
-                <div class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-700 ">
-                    <img class="mx-2 mt-6 my-3 w-14 h-4"  src="./img/npm.png" alt="NPM">
-                    <div class="py-2">
-                        <p class=" font-medium">NPM</p>
-                        <p class="text-xs  hover:border-b border-white">Package Manager</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Bar end -->
+    <section id="About" class="mb-40 md:m-0">
+      <div class="container sm:p-1 md:p-16 lg:p-44 text-white">
+        <div class="px-5">
+          <span
+            class="text-violet-500 font-bold text-4xl sm:text-5xl md:text-4xl"
+          >
+            #About
+          </span>
+          <p
+            class="container w-[350px] md:w-[700px] mb-10 text-white sm:text-xl md:text-lg"
+          >
+            Hi my name is Ferdian i am a junior highschool that love Programming
+            and i usually like to play video games it started when my mom called
+            a teacher who want to teach me because i don't have a job to do at
+            home . At first, i really don't want to study Programming because it
+            look too hard for me After serveral project that we made i was
+            really into it and now here i am
+          </p>
         </div>
+        <div class="flex justify-start items-center gap-4">
+          <h1 class="px-5 mb-10 font-bold text-3xl text-pink-700">
+            Tech Stack:
+          </h1>
+        </div>
+        <!-- Bar start -->
+        <!-- Programming Language -->
+        <div
+          class="px-5 grid gap-4 mb-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6"
+        >
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img class="mx-2 my-3 w-10 h-10" src="./img/html.svg" alt="" />
+            <div class="py-2">
+              <p class="font-medium">HTML</p>
+              <p class="text-sm hover:border-b border-white">Intermediate</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img class="mx-2 my-3 w-10 h-10" src="./img/CSS3.png" alt="CSS" />
+            <div class="py-2">
+              <p class="font-medium">CSS</p>
+              <p class="text-sm hover:border-b border-white">Intermediate</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img class="mx-2 my-3 w-10 h-10" src="./img/php.png" alt="PHP" />
+            <div class="py-2">
+              <p class="font-medium">PHP</p>
+              <p class="text-sm hover:border-b border-white">Intermediate</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-10 h-10"
+              src="./img/JS.png"
+              alt="JavaScript"
+            />
+            <div class="py-2">
+              <p class="font-medium">JavaScript</p>
+              <p class="text-sm hover:border-b border-white">Intermediate</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-10 h-10"
+              src="./img/Tailwind.svg"
+              alt="TailwindCSS"
+            />
+            <div class="py-2">
+              <p class="font-medium">TailwindCSS</p>
+              <p class="text-sm hover:border-b border-white">Beginner</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-10 h-10"
+              src="./img/Python.png"
+              alt="Python"
+            />
+            <div class="py-2">
+              <p class="font-medium">Python</p>
+              <p class="text-sm hover:border-b border-white">Beginner</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-10 h-10"
+              src="./img/Laravel.png"
+              alt="Laravel"
+            />
+            <div class="py-2">
+              <p class="font-medium">Laravel</p>
+              <p class="text-sm hover:border-b border-white">Beginner</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tools -->
+        <h1 class="px-5 mb-10 font-bold text-3xl text-pink-700">Tools:</h1>
+        <div
+          class="px-5 grid gap-4 mb-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6"
+        >
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img class="mx-2 my-3 w-10 h-10" src="./img/Git.png" alt="Git" />
+            <div class="py-2">
+              <p class="font-medium">Git</p>
+              <p class="text-sm hover:border-b border-white">Version Control</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <div class="p-2 mx-2 my-3 w-10 h-10">
+              <i class="fa-brands fa-github fa-2xl" style="color: #ffffff"></i>
+            </div>
+            <!-- <img class="mx-2 my-3 w-10 h-10 bg-white rounded-lg"  src="./img/github.svg" alt="Github"> -->
+            <div class="py-2">
+              <p class="font-medium">Github</p>
+              <p class="text-sm hover:border-b border-white">Web Hosting</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-10 h-10"
+              src="./img/VS.png"
+              alt="Visual Studio Code"
+            />
+            <div class="py-2">
+              <p class="font-medium">VsCode</p>
+              <p class="text-sm hover:border-b border-white">Code Editor</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 my-3 w-14 h-10"
+              src="./img/MySQL.png"
+              alt="Laravel"
+            />
+            <div class="py-2">
+              <p class="font-medium">MySQL</p>
+              <p class="text-sm hover:border-b border-white">Database</p>
+            </div>
+          </div>
+          <div
+            class="flex mb-4 w-[175px] md:w-44 h-16 border-2 rounded-md border-violet-500"
+          >
+            <img
+              class="mx-2 mt-6 my-3 w-14 h-4"
+              src="./img/npm.png"
+              alt="NPM"
+            />
+            <div class="py-2">
+              <p class="font-medium">NPM</p>
+              <p class="text-xs hover:border-b border-white">Package Manager</p>
+            </div>
+          </div>
+        </div>
+        <!-- Bar end -->
+      </div>
     </section>
     <!-- About end   -->
     <!-- Project Start -->
     <section id="Project" class="mb-40 md:m-0">
-        <div class="container sm:p-1 md:p-16 lg:p-44  text-white ">
-            <div class="px-5">
-                <h1 class="container text-4xl font-bold text-violet-700">#Project</h1>
-                <p class="container w-[350px] md:w-[700px] mb-10 "> A list of project that i've been working on since the day that i started <span class="border-b-2 border-pink-700 font-bold text-pink-700">Programming</span>it started when my mom called a teacher who want to teach me because i dont't have a skill to do at home. At first, i really don't want to study to code because it look too hard for me  After serveral project that we made i was really into it and now here i am</p>
-            </div>
-            <h1 class="sm:mx-4 px-6 text-4xl font-bold text-pink-700 mb-10">Project-List:</h1>    
-            <div class="md:flex">
-                <div class="py-12 mb-10 md:mb-0 mx-auto sm:mx-4 md:mx-2 w-[300px] md:w-96  text-white bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg">
-                    <img class=" bg-cover w-[250px] h-[150px] md:w-80 md:h-40 shadow-2xl rounded mx-auto mb-2 " src="./img/PW.png" alt="Personal Web">
-                    <div class="flex justify-between">
-                        <h1 class=" mx-6 border-b-2 border-b-white text-2xl font-bold">Personal Web</h1>
-                        <div class="flex">
-                            <a class="p-1 hover:border-b-2 border-b-white" href="https://github.com/12Ferdian12/Personal_Web"><i data-feather="github"></i></a>
-                            <a class="p-1 hover:border-b-2 border-b-white" href=""><i data-feather="arrow-down-left"></i></a>
-                        </div>
-                    </div>
-                    <p class=" p-7 font-bold text-sm text-start  ">A Website that I made about my Personal Stuff that I do, and some skill that I've learned from studying  </p>
-                    <p class="px-7 font-bold text-xs">Tech: HTML, TailwindCSS, JavaScript</p>
-                </div>
-                <div class="py-12 mb-10 md:mb-0 mx-auto sm:mx-4 md:mx-2 w-[300px] md:w-96  text-white bg-violet-800 hover:bg-violet-700  shadow-2xl rounded-lg">
-                    <img class=" bg-cover w-[250px] h-[150px] md:w-80 md:h-40  rounded mx-auto mb-2 " src="./img/K55.png" alt="Kopi55">
-                    <div class="flex justify-between">
-                        <h1 class=" mx-6 border-b-2 border-b-white text-2xl font-bold">Kopi55</h1>
-                        <div class="flex">
-                            <a class="p-1 mr-7 hover:border-b-2 border-b-white" href="https://github.com/12Ferdian12/Kopi55"><i data-feather="github"></i></a>
-                        </div>
-                    </div>
-                    <p class=" p-7 font-bold text-sm text-start  ">A Study Website that i made with 0 CSS skill, so i made it by studying from 0 by youtube and some other web. Mostly i talk to my Teacher</p>
-                    <p class="px-7 font-bold text-xs">Tech: HTML, Vanilla CSS, PHP</p>
-                </div>
-            </div>
+      <div class="container sm:p-1 md:p-16 lg:p-44 text-white">
+        <div class="px-5">
+          <h1 class="container text-4xl font-bold text-violet-500">#Project</h1>
+          <p class="container w-[350px] md:w-[700px] mb-10">
+            A list of project that i've been working on since the day that i
+            started
+            <span class="border-b-2 border-pink-700 font-bold text-pink-700"
+              >Programming</span
+            >it started when my mom called a teacher who want to teach me
+            because i dont't have a skill to do at home. At first, i really
+            don't want to study to code because it look too hard for me After
+            serveral project that we made i was really into it and now here i am
+          </p>
         </div>
+        <h1 class="sm:mx-4 px-6 text-4xl font-bold text-pink-700 mb-10">
+          Project-List:
+        </h1>
+        <div class="md:flex">
+          <div
+            class="py-12 mb-10 md:mb-0 mx-auto sm:mx-4 md:mx-2 w-[300px] md:w-96 text-white bg-violet-600 hover:bg-violet-500 shadow-2xl rounded-lg"
+          >
+            <img
+              class="bg-cover w-[250px] h-[150px] md:w-80 md:h-40 shadow-2xl rounded mx-auto mb-2"
+              src="./img/PW.png"
+              alt="Personal Web"
+            />
+            <div class="flex justify-between">
+              <h1 class="mx-6 border-b-2 border-b-white text-2xl font-bold">
+                Personal Web
+              </h1>
+              <div class="flex">
+                <a
+                  class="p-1 hover:border-b-2 border-b-white"
+                  href="https://github.com/12Ferdian12/Personal_Web"
+                  ><i data-feather="github"></i
+                ></a>
+                <a class="p-1 hover:border-b-2 border-b-white" href=""
+                  ><i data-feather="arrow-down-left"></i
+                ></a>
+              </div>
+            </div>
+            <p class="p-7 font-bold text-sm text-start">
+              A Website that I made about my Personal Stuff that I do, and some
+              skill that I've learned from studying
+            </p>
+            <p class="px-7 font-bold text-xs">
+              Tech: HTML, TailwindCSS, JavaScript
+            </p>
+          </div>
+          <div
+            class="py-12 mb-10 md:mb-0 mx-auto sm:mx-4 md:mx-2 w-[300px] md:w-96 text-white bg-violet-600 hover:bg-violet-500 shadow-2xl rounded-lg"
+          >
+            <img
+              class="bg-cover w-[250px] h-[150px] md:w-80 md:h-40 rounded mx-auto mb-2"
+              src="./img/K55.png"
+              alt="Kopi55"
+            />
+            <div class="flex justify-between">
+              <h1 class="mx-6 border-b-2 border-b-white text-2xl font-bold">
+                Kopi55
+              </h1>
+              <div class="flex">
+                <a
+                  class="p-1 mr-7 hover:border-b-2 border-b-white"
+                  href="https://github.com/12Ferdian12/Kopi55"
+                  ><i data-feather="github"></i
+                ></a>
+              </div>
+            </div>
+            <p class="p-7 font-bold text-sm text-start">
+              A Study Website that i made with 0 CSS skill, so i made it by
+              studying from 0 by youtube and some other web. Mostly i talk to my
+              Teacher
+            </p>
+            <p class="px-7 font-bold text-xs">Tech: HTML, Vanilla CSS, PHP</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="Contact" class="text-white">
-            <div class="container sm:p-1 md:p-16 lg:p-44  text-white ">
-                <div class="p-4 mx-4">
-                    <h1  class="lg:px-[320px] mx-auto md:px-[100px] pl-[50px] py-7 text-4xl font-bold text-pink-700">Want To <span class="border-b-4 border-pink-700">Contact</span> Me?</h1>
-                    <div class="md:flex mx-auto px-[50px] lg:px-56">
-                        <div class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-700">
-                            <a class="flex p-6 items-center hover:font-bold" href="https://www.instagram.com/yong.who/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> <p class=" mx-4 hover:border-b border-white">Instagram</p> </a>     
-                        </div>
-                        <div class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-700 ">
-                            <a class="flex p-6 items-center hover:font-bold" href=""><i class="fa-brands fa-discord" style="color: #ffffff;"></i> <p class=" mx-4 hover:border-b border-white">Discord</p> </a>     
-                        </div>
-                        <div class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-700">
-                            <a class="flex p-6 items-center hover:font-bold" href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i> <p class=" mx-4 hover:border-b border-white">youtube</p></a>     
-                        </div>
-                    </div>
-                </div>
+      <div class="container sm:p-1 md:p-16 lg:p-44 text-white">
+        <div class="p-4 mx-4">
+          <h1
+            class="lg:px-[320px] mx-auto md:px-[100px] pl-[50px] py-7 text-4xl font-bold text-pink-700"
+          >
+            Want To <span class="border-b-4 border-pink-700">Contact</span> Me?
+          </h1>
+          <div class="md:flex mx-auto px-[50px] lg:px-56">
+            <div
+              class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-500"
+            >
+              <a
+                class="flex p-6 items-center hover:font-bold"
+                href="https://www.instagram.com/yong.who/"
+                ><i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                <p class="mx-4 hover:border-b border-white">Instagram</p>
+              </a>
             </div>
-        <footer class="p-12 lg:p-16 border-t-2 border-pink-500 bottom-0 text-white ">
-            <div class="md:flex  md:p-0 container">
-                <div class="p-1 mb-5">
-                    <p class="md:mb-4 mb-2">Tech Account:</p>
-                    <a class="flex " href="https://github.com/12Ferdian12"><i data-feather="github"></i> <p class="hover:border-b-2 border-white">12Ferdian12</p></a>
-                </div>
-                <div class="px-5 text-center md:px-[150px]  lg:px-[450px] md:py-4">
-                    <p class="p-1 w-[250px] ">Created by <span class=" font-bold text-pink-500 hover:border-b border-pink-500">Ferdian.</span> | © 2023 <br>Style Editor: <a href="https://www.instagram.com/taroo_arts/" class="text-pink-500 font-bold hover:border-b border-pink-500">taroo_arts</a></p>    
-                </div>
+            <div
+              class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-500"
+            >
+              <a class="flex p-6 items-center hover:font-bold" href=""
+                ><i class="fa-brands fa-discord" style="color: #ffffff"></i>
+                <p class="mx-4 hover:border-b border-white">Discord</p>
+              </a>
             </div>
-        </footer>
+            <div
+              class="flex mb-3 mx-4 w-44 h-16 border-2 rounded-md border-violet-500"
+            >
+              <a class="flex p-6 items-center hover:font-bold" href=""
+                ><i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+                <p class="mx-4 hover:border-b border-white">youtube</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="p-12 lg:p-16 border-t-2 border-pink-500 bottom-0 text-white"
+      >
+        <div class="md:flex md:p-0 container">
+          <div class="p-1 mb-5">
+            <p class="md:mb-4 mb-2">Tech Account:</p>
+            <a class="flex" href="https://github.com/12Ferdian12"
+              ><i data-feather="github"></i>
+              <p class="hover:border-b-2 border-white">12Ferdian12</p></a
+            >
+          </div>
+          <div class="px-5 text-center md:px-[150px] lg:px-[450px] md:py-4">
+            <p class="p-1 w-[250px]">
+              Created by
+              <span
+                class="font-bold text-pink-500 hover:border-b border-pink-500"
+                >Ferdian.</span
+              >
+              | © 2023 <br />Style Editor:
+              <a
+                href="https://www.instagram.com/taroo_arts/"
+                class="text-pink-500 font-bold hover:border-b border-pink-500"
+                >taroo_arts</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
     <script>
-        feather.replace()
+      feather.replace();
     </script>
-    <script src="https://kit.fontawesome.com/8fa82cf36d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8fa82cf36d.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-    // Get the button
-    let mybutton = document.getElementById("myBtn");
-        
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    //   document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    // Maintenance
-    // var app = document.getElementById('head');
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
 
-    // var typewriter = new Typewriter(app, {
-    //     loop: true
-    // });
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        //   document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      // Maintenance
+      // var app = document.getElementById('head');
 
-    // typewriter.typeString('Hello World!')
-    //     .pauseFor(2500)
-    //     .deleteAll()
-    //     .typeString('Strings can be removed')
-    //     .pauseFor(2500)
-    //     .deleteChars(7)
-    //     .typeString('<strong>altered!</strong>')
-    //     .pauseFor(2500)
-    //     .start();
-        </script>
-</body>
+      // var typewriter = new Typewriter(app, {
+      //     loop: true
+      // });
+
+      // typewriter.typeString('Hello World!')
+      //     .pauseFor(2500)
+      //     .deleteAll()
+      //     .typeString('Strings can be removed')
+      //     .pauseFor(2500)
+      //     .deleteChars(7)
+      //     .typeString('<strong>altered!</strong>')
+      //     .pauseFor(2500)
+      //     .start();
+    </script>
+  </body>
 </html>
